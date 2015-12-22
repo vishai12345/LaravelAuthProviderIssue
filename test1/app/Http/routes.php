@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+    dd(\Illuminate\Support\Facades\Auth::check());
     return view('welcome');
 });
 
